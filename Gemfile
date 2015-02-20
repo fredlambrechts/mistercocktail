@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem "simple_form"
 gem 'bootstrap-sass', '~> 3.3.1'
 gem 'font-awesome-sass', '~> 4.2.0'
+gem 'aws-sdk', '< 2.0'
+gem 'paperclip'
 
 gem 'figaro'
 ruby '2.2.0'
