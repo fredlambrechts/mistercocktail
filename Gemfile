@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem "simple_form"
 gem 'bootstrap-sass', '~> 3.3.1'
 gem 'font-awesome-sass', '~> 4.2.0'
+
+gem 'figaro'
 ruby '2.2.0'
 gem 'rails_12factor', group: :production
 gem 'puma',           group: :production
