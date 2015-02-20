@@ -1,0 +1,36 @@
+<h1>Editing Cocktail</h1>
+
+<%= render 'form' %>
+
+<br>
+
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Ingredient</th>
+      <th colspan="2"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cocktail.doses.each do |d| %>
+      <tr>
+        <td><%= d.description %></td>
+        <td><%= d.ingredient %></td>
+        <td><%= link_to 'Edit', edit_dose_path(d)%></td>
+        <td><%= link_to 'Destroy', d, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+</div>
+
+
+
+<br>
+
+<%= link_to 'Show', @cocktail %> |
+<%= link_to 'Back', cocktails_path %>
